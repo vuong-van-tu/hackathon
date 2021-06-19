@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="215.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="215.0" spacing="4.0" style="-fx-background-color: #66CCFF;">
+               <children>
+                  <Button fx:id="bt_all" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #66CCFF;" text="All Processors" textFill="WHITE">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="ALIGN_JUSTIFY" />
+                     </graphic>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bt_news" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #66CCFF;" text="News" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="BOOK" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="bt_support" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #66CCFF;" text="Support" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="SUPPORT" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="bt_aboutus" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #66CCFF;" text="About us" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="USER" />
+                     </graphic>
+                  </Button>
+                  <Button fx:id="bt_feedback" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="217.0" style="-fx-background-color: #66CCFF;" text="Feedback" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIcon glyphName="COMMENT" />
+                     </graphic>
+                  </Button>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="214.0" layoutY="-4.0" prefHeight="600.0" prefWidth="685.0">
+         <children>
+            <Pane fx:id="p_all" prefHeight="600.0" prefWidth="686.0" style="-fx-background-color: #FFCCFF;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane fx:id="p_new" prefHeight="600.0" prefWidth="685.0" style="-fx-background-color: #FFCCCC;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane fx:id="p_support" prefHeight="600.0" prefWidth="685.0" style="-fx-background-color: #FFCC33;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane fx:id="p_aboutus" prefHeight="600.0" prefWidth="685.0" style="-fx-background-color: #FFC690;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+            <Pane fx:id="p_feedback" prefHeight="600.0" prefWidth="686.0" style="-fx-background-color: #F93183;">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
